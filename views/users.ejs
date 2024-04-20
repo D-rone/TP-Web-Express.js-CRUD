@@ -1,0 +1,15 @@
+<ul>
+  <% for(var i=0; i < personnes.length; i++) { %>
+
+  <li>
+    <p>
+      name : <b> <%=personnes[i].name%> </b> || age : <b> <%=personnes[i].age%></b>
+      <a href="/users/updateForm?id=<%=personnes[i].id%>">Update</a>
+      <a href="/users/deleteUser?id=<%=personnes[i].id%>">Delete</a>
+    </p>
+  </li>
+
+  <% } %>
+</ul>
+
+<a href="/users/addForm">Add User</a>
